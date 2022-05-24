@@ -1,0 +1,134 @@
+@import "../../styles/fonts.scss";
+@import "../../styles/colors.scss";
+
+.northy-ui-btn {
+  display: inline-flex;
+  align-items: center;
+
+  &-s {
+    padding: 4px;
+
+    @include desktop-xs-standard;
+  }
+
+  &-m {
+    padding: 6px;
+
+    @include desktop-s-standard;
+  }
+
+  &-l {
+    padding: 10px;
+
+    @include desktop-l-standard;
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  @mixin btn-colors-mixin(
+    $button-color,
+    $content-color,
+    $outline-color: false,
+  ) {
+    border-radius: 4px;
+    border: 1px solid $button-color;
+    background-color: $button-color;
+    color: $content-color;
+
+    svg path {
+      fill: $content-color;
+    }
+
+    &.northy-ui-btn-outline,
+    &.northy-ui-btn-no-decoration {
+      background-color: $main-surface;
+
+      &-muted {
+        background-color: $main-surface;
+        color: $grayscale-light;
+      }
+    }
+
+    &.northy-ui-btn-outline {
+      color: $outline-color or $button-color;
+      border-color: $outline-color or $button-color;
+
+      svg path {
+        fill: $outline-color or $button-color;
+      }
+
+      &-muted {
+        border-color: $outline-color or $button-color;
+      }
+    }
+
+    &.northy-ui-btn-no-decoration {
+      color: $button-color;
+      border-color: $main-surface;
+
+      svg path {
+        fill: $button-color;
+      }
+
+      &-muted {
+        border-color: $main-surface;
+
+        svg path {
+          fill: $grayscale-light;
+        }
+      }
+    }
+  }
+
+  &-label {
+    padding: 4px 10px;
+  }
+
+  &-primary {
+    @include btn-colors-mixin($main-primary, $main-surface);
+
+    &-muted {
+      @include btn-colors-mixin($main-primary-muted, $main-primary);
+    }
+  }
+
+  &-secondary {
+    @include btn-colors-mixin($main-secondary, $main-surface);
+
+    &-muted {
+      @include btn-colors-mixin($main-secondary-muted, $main-secondary);
+    }
+  }
+
+  &-grayscale {
+    @include btn-colors-mixin(
+      $grayscale-lightest,
+      $grayscale-hardest,
+      $grayscale-hardest
+    );
+
+    &-muted {
+      @include btn-colors-mixin(
+        $main-surface,
+        $grayscale-light,
+        $grayscale-light
+      );
+    }
+  }
+
+  &-error {
+    @include btn-colors-mixin($palette-error, $palette-on-error);
+
+    &-muted {
+      @include btn-colors-mixin($palette-error-muted, $palette-error);
+    }
+  }
+
+  &-inner-btn {
+    background-color: inherit;
+    border: none;
+  }
+}

@@ -1,0 +1,23 @@
+$default-shadow-color: rgba(0, 0, 0, 0.1);
+$primary-shadow-color: rgba(255, 102, 51, 0.2);
+$secondary-shadow-color: rgba(112, 192, 91, 0.2);
+
+@mixin xs-shadow($color) {
+  box-shadow: 1px 2px 4px $color;
+}
+
+@mixin s-shadow($color) {
+  box-shadow: 2px 4px 6px $color;
+}
+
+@mixin m-shadow($color) {
+  box-shadow: 4px 8px 16px $color;
+}
+
+@mixin l-shadow($color) {
+  box-shadow: 8px 16px 32px $color;
+}
+
+@mixin xl-shadow($color) {
+  box-shadow: 16px 32px 64px $color;
+}

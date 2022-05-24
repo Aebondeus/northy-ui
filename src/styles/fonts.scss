@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+$desktop-text-xs: 12px;
+$desktop-text-s: 16px;
+$desktop-text-m: 18px;
+$desktop-text-l: 24px;
+$desktop-text-xl: 36px;
+$desktop-header-xs: 18px;
+$desktop-header-s: 24px;
+$desktop-header-m: 36px;
+$desktop-header-l: 48px;
+$desktop-header-xl: 64px;
+$mobile-text-xs: 8px;
+$mobile-text-s: 12px;
+$mobile-text-m: 14px;
+$mobile-text-l: 20px;
+$mobile-text-xl: 32px;
+$mobile-header-xs: 16px;
+$mobile-header-s: 20px;
+$mobile-header-m: 24px;
+$mobile-header-l: 36px;
+$mobile-header-xl: 48px;
+
+@mixin standard-font-mixin {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 150%;
+}
+
+@mixin bold-font-mixin {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  line-height: 150%;
+  font-style: normal;
+}
+
+@mixin desktop-xs-standard {
+  @include standard-font-mixin();
+
+  font-size: $desktop-text-xs;
+}
+
+@mixin desktop-s-standard {
+  @include standard-font-mixin();
+
+  font-size: $desktop-text-s;
+}
+
+@mixin desktop-m-standard {
+  @include standard-font-mixin();
+
+  font-size: $desktop-text-m;
+}
+
+@mixin desktop-l-standard {
+  @include standard-font-mixin();
+
+  font-size: $desktop-text-l;
+}
+
+@mixin desktop-xl-standard {
+  @include standard-font-mixin();
+
+  font-size: $desktop-text-xl;
+}
+
+@mixin desktop-xs-bold {
+  @include bold-font-mixin();
+
+  font-size: $desktop-text-xs;
+}
+
+@mixin desktop-s-bold {
+  @include bold-font-mixin();
+
+  font-size: $desktop-text-s;
+}
+
+@mixin desktop-m-bold {
+  @include bold-font-mixin();
+
+  font-size: $desktop-text-m;
+}
+
+@mixin desktop-l-bold {
+  @include bold-font-mixin();
+
+  font-size: $desktop-text-l;
+}
+
+@mixin desktop-xl-bold {
+  @include bold-font-mixin();
+
+  font-size: $desktop-text-xl;
+}
+
+@mixin desktop-xs-header {
+  @include bold-font-mixin();
+
+  font-size: $desktop-header-xs;
+}
+
+@mixin desktop-s-header {
+  @include bold-font-mixin();
+
+  font-size: $desktop-header-s;
+}
+
+@mixin desktop-m-header {
+  @include bold-font-mixin();
+
+  font-size: $desktop-header-m;
+}
+
+@mixin desktop-l-header {
+  @include bold-font-mixin();
+
+  font-size: $desktop-header-l;
+}
+
+@mixin desktop-xl-header {
+  @include bold-font-mixin();
+
+  font-size: $desktop-header-xl;
+}
+
+@mixin mobile-xs-standard {
+  @include standard-font-mixin();
+
+  font-size: $mobile-text-xs;
+}
+
+@mixin mobile-s-standard {
+  @include standard-font-mixin();
+
+  font-size: $mobile-text-s;
+}
+
+@mixin mobile-m-standard {
+  @include standard-font-mixin();
+
+  font-size: $mobile-text-m;
+}
+
+@mixin mobile-l-standard {
+  @include standard-font-mixin();
+
+  font-size: $mobile-text-l;
+}
+
+@mixin mobile-xl-standard {
+  @include standard-font-mixin();
+
+  font-size: $mobile-text-xl;
+}
+
+@mixin mobile-xs-bold {
+  @include bold-font-mixin();
+
+  font-size: $mobile-text-xs;
+}
+
+@mixin mobile-s-bold {
+  @include bold-font-mixin();
+
+  font-size: $mobile-text-s;
+}
+
+@mixin mobile-m-bold {
+  @include bold-font-mixin();
+
+  font-size: $mobile-text-m;
+}
+
+@mixin mobile-l-bold {
+  @include bold-font-mixin();
+
+  font-size: $mobile-text-l;
+}
+
+@mixin mobile-xl-bold {
+  @include bold-font-mixin();
+
+  font-size: $mobile-text-xl;
+}
+
+@mixin desktop-xs-header {
+  @include bold-font-mixin();
+
+  font-size: $mobile-header-xs;
+}
+
+@mixin desktop-s-header {
+  @include bold-font-mixin();
+
+  font-size: $mobile-header-s;
+}
+
+@mixin desktop-m-header {
+  @include bold-font-mixin();
+
+  font-size: $mobile-header-m;
+}
+
+@mixin desktop-l-header {
+  @include bold-font-mixin();
+
+  font-size: $mobile-header-l;
+}
+
+@mixin desktop-xl-header {
+  @include bold-font-mixin();
+
+  font-size: $mobile-header-xl;
+}
+
